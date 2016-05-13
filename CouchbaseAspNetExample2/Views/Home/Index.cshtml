@@ -1,0 +1,15 @@
+﻿@model List<CouchbaseAspNetExample2.Models.Person>
+
+@{
+    ViewBag.Title = "Home : Couchbase & ASP.NET Example";
+}
+
+@if (!Model.Any())
+{
+    <p>There are no people yet.</p>
+}
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_person", item)
+}

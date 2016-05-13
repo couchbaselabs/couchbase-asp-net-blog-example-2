@@ -1,0 +1,10 @@
+﻿@model CouchbaseAspNetExample2.Models.Person
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">@Model.Name</h2>
+    </div>
+    <div class="panel-body">
+        @Html.Raw(Model.Address)
+    </div>
+</div>
